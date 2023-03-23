@@ -6,4 +6,4 @@ endif
 python3 import nvim_euporie.euporie
 python3 euporie = nvim_euporie.euporie.Euporie()
 
-command! RunEuporie = python3 euporie.run()
+command! RunEuporie python3 euporie.run()
