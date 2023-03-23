@@ -2,5 +2,5 @@ import vim
 
 class Euporie():
 
-    def run():
+    def run(self):
         pass
