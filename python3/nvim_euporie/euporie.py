@@ -1,9 +1,11 @@
 import vim
-import euporie
-from importlib.metadata import entry_points
-
+import subprocess
 
 class Euporie():
 
     def run(self):
-       entry_points().select(name='notebook')[0].load() 
+        b = vim.buffer.current
+        b[:] = None
+        
+        with open("bytes", "rb") as f:
+            b.append(f.read())
