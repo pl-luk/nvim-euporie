@@ -8,4 +8,6 @@ class Euporie():
         b[:] = None
         
         with open("/src/nvim-euporie/python3/nvim_euporie/bytes", "rb") as f:
-            b.append(f.read())
+           binary_buf = f.read()
+           lines = binary_buf.split(b'\n')
+           b[:] = lines
